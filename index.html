@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"">
+    <title>Pitagoras Calculator</title>
+</head>
+<body>
+
+    <div class="dadosCalculator">
+
+        <div class="dados">
+            <label for="hipotenusaValue"> A hipotenusa é: </label>
+            <input type="text" disabled="disable" id="hipotenusaValue" value="">
+        </div>
+
+        <div class="dados">
+            <label for="catetoA_value"> O cateto A é: </label>
+            <input type="text" disabled="disable" id="catetoA_value" value="">
+        </div>
+
+        <div class="dados">
+            <label for="catetoB_value"> O cateto B é: </label>
+            <input type="text" disabled="disable" id="catetoB_value" value="">
+        </div>
+
+        <div class="dados">
+            <label for="triânguloValue"> A área do triângulo é: </label>
+            <input type="text" disabled="disable" id="triânguloValue" value="">
+        </div>
+
+        <div class="dados">
+            <label for="alturaValue"> A altura da hipotenusa é: </label>
+            <input type="text" disabled="disable" id="alturaValue" value="">
+        </div>
+
+    </div>
+
+
+
+    <main class="containerCalulator">
+        <div>
+            <h1> Pitagoras  <br> Calculator </h1>
+        </div>
+    
+        <div class="calc">
+
+            
+
+            <div class="telaCalc">
+                <div class="tela_img">
+                    <div class="telaConteudo">
+                        <p > Cateto A: <span id="campo_a" class="campoAtivado"> 0 </span> </p>
+                        <hr>
+                        <p > Cateto B: <span id="campo_b"> 0 </span> </p>
+                        <hr>
+                        <p > Hipotenusa: <span id="campo_h"> 0 </span> </p>
+                    </div>
+                </div>   
+
+                
+            </div>
+    
+            <div class="layoteBtn">
+    
+                <button id="cateto_a" class="campoAtivo">Cateto A</button>
+                <button id="cateto_b" >Cateto B</button>
+                <button id="limpar" >LIMPAR</button>
+    
+                <button id="hipotenusa" class="twoSpace">Hipotenusa</button>
+                <button id="." >.</button>
+    
+                <button id="7" >7</button>
+                <button id="8" >8</button>
+                <button id="9" >9</button>
+    
+                <button id="4" >4</button>
+                <button id="5" >5</button>
+                <button id="6" >6</button>
+    
+                <button id="1" >1</button>
+                <button id="2" >2</button>
+                <button id="3" >3</button>
+    
+                <button id="0" class="twoSpace">0</button>
+                <button id="=" >=</button>
+                
+            </div>
+    
+        </div>
+    </main>
+   
+
+    <script src="funcoes.js" ></script>
+</body>
+</html>

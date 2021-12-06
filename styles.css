@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Estonia&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.campoAtivo {
+    background-color: skyblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+html {
+    font: 400 12px roboto;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.dadosCalculator {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dadosCalculator input {
+    width: 100%;
+}
+
+.dados {
+    width: 100%;
+}
+
+.containerCalulator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.calc {
+    width: 270px;
+    height: 450px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    border: solid 2px black;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.telaCalc {
+    height: 230px;
+    width: 100%;
+
+    border-bottom: solid 2px black;
+
+    background-color: rgba(0,0,0, 0.2);
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;  
+}
+
+.tela_img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.telaConteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 0;
+}
+
+.telaCalc p {
+    font-size: 1.1rem;
+    margin-left: 10px;
+    color: black;
+    z-index: 0;
+}
+
+.telaCalc hr {
+    width: 100%;
+    z-index: 0;
+}
+
+.layoteBtn {
+    display: grid;
+    width: 100%;
+    height: 75%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 5px;
+}
+
+.layoteBtn button {
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+}
+
+.layoteBtn .twoSpace {
+    grid-column: span 2;
+}
