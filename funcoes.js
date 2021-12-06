@@ -122,7 +122,7 @@ function calcularResultado() {
     
             } else if (valorCampoA == 0) {
                 let cA = hipotenusaSemValor - catetoB
-                if(cA < hipotenusaSemValor) {
+                if(cA > valorCampoH) {
                     catetoA = cA
                     return true
 
@@ -133,7 +133,7 @@ function calcularResultado() {
                
             } else if (valorCampoB == 0) {
                 let cB = hipotenusaSemValor - catetoA
-                if(cB < hipotenusaSemValor) {
+                if(cB > valorCampoH) {
                     catetoB = cB
                     return true
 
