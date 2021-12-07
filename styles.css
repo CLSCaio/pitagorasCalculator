@@ -25,11 +25,13 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin: 90px 0;
+    flex-direction: column;
 }
 
 .dadosCalculator {
     display: flex;
-    width: 15%;
+    width: 80%;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
@@ -128,4 +130,16 @@ body {
 
 .layoteBtn .twoSpace {
     grid-column: span 2;
+}
+
+@media(min-width: 800px) {
+    body {
+        flex-direction: row;
+        margin: 0;
+    } 
+
+    .dadosCalculator {  
+        width: 15%;
+        order: -1;
+    }
 }
